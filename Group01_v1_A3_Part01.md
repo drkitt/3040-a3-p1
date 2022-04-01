@@ -18,4 +18,14 @@ https://api.ManitobaFloods/json?MBfr&StartYear&EndYear
   * “Deaths”: 12
   * **StartDate**: the starting date of floods
   * “StartDate”: 04-15-1950
+  * **EndDate**: the last date of flood
+  * "EndDate": 06-12-1950
+  
+ * **Status:** Contains “OK” if the request succeeded, or one of the following error codes if it failed:
+   * **INVALID_REGION**: The MBfr string is not the name of a valid region.
+   * **INVALID_START**: StartYear is less than 1870, greater than 2022, greater than EndYear, or not a number.
+   * **INVALID_END**: EndYear is less than 1870, greater than 2022, less than StartYear, or not a number.
+   * **UNKNOWN_ERROR**: An unexpected server error occurred. Making the request again may solve the problem.
+
+
 
