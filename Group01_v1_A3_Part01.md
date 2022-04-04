@@ -27,5 +27,28 @@ https://api.ManitobaFloods/json?MBfr&StartYear&EndYear
    * **INVALID_END**: EndYear is less than 1870, greater than 2022, less than StartYear, or not a number.
    * **UNKNOWN_ERROR**: An unexpected server error occurred. Making the request again may solve the problem.
 
+### *Sample request with sample response*
 
+`https://api.ManitobaFloods.org/json?MBfr=red_river&startyear=1950&endyear=1997`
 
+```
+{
+  “results”: {
+    “Floods”: [
+    {
+      “PropertyDamage”: 950000000,
+      “Deaths”: 8,
+      “StartDate”: “04-15-1950”,
+      “EndDate”: “06-12-1950”
+    },
+    {
+      “PropertyDamage”: 3500000000,
+      “Deaths”: 0,
+      “StartDate”: “04-10-1997”,
+      “EndDate”: “05-13-1997”
+    },
+    ],
+  },
+  “Status”: “OK”
+}
+```
