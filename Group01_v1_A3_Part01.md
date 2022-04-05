@@ -9,7 +9,7 @@ https://api.ManitobaFloods/json?MBfr&StartYear&EndYear
 * StartYear(int): The start year for the range of years flood information is requested for. Inclusive. Required.
 * EndYear(int): The end year for the range of years flood information is requested for. Inclusive. Required.
 
-### **Description of resources - formatted as JSON**
+### *Description of resources - formatted as JSON*
 
 * **Floods:** An array of floods from start year to end year. Each flood has the following properties:
   * **PropertyDamage**: The total Dollar amount of property damage. 
